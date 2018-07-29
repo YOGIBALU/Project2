@@ -1,0 +1,56 @@
+.login_title{
+	font-family:"Comic Sans MS";
+	font-size:4vw;
+	color:purple;
+	text-align: center;
+    animation-name:logintitle;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+ 
+}
+
+input[type=text], input[type=password] {
+   width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+     font-color:blue;
+}
+   
+.register_title{
+	font-family:"Comic Sans MS";
+	font-size:4vw;
+	color:blue;
+	text-align: center;
+    animation-name:registertitle;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    font-color:green;
+}
+
+.Blog_title{
+	font-family:"Comic Sans MS";
+	font-size:4vw;
+	color:violet;
+	text-align: center;
+    animation-name:Blogtitle;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+
+.Forum_title{
+	font-family:"Comic Sans MS";
+	font-size:4vw;
+	color:pink;
+	text-align: center;
+    animation-name:Forumtitle;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+
