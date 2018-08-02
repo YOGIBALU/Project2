@@ -1,9 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+.showfriendList
+{
+font-size:35px;
+font-family:sans-serif;
+text-align:center;
+font-color:green;
+}
+.color
+{
+background-color:orange;
+}
+</style>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="color">
 <div class="container" ng-controller="FriendController">
+<div class="showfriendList">RequestList</div>
 <table width="80%" align="center">
-<tr bgcolor="orange">
+<tr bgcolor="violet">
 <td colspan="3">Friend List</td>
 </tr>
-<tr bgcolor="gray" ng-repeat="friend in showPendingFriendRequestList">
+<tr bgcolor="brown" ng-repeat="friend in showPendingFriendRequestList">
 <td>
  	<img src="http://localhost:8057/ChatMiddleware/getImage/{{friend.loginname}}" width="40" height="40"/>
 </td>
@@ -15,3 +47,26 @@
  </tr>
 </table>
 </div>
+<br>
+
+ 
+
+<!-- Photo Grid -->
+<div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
+  <div class="w3-half">
+    <img src="getImages/friends.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="w3-half">
+    <img src="getImages/friendsforever.jpg" style="width:100%">
+    
+  </div>
+</div>
+  
+<!-- End Page Content -->
+</div>
+
+</div>
+</body>
+</html>

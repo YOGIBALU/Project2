@@ -1,16 +1,87 @@
-<div class="Forum">
-<div ng-controller="ForumController">
-<div class="Forum_title">Forum</div>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+.showfriendList
+{
+font-size:35px;
+font-family:sans-serif;
+text-align:center;
+font-color:green;
+}
+.color
+{
+background-color:brown;
+}
+.h1
+{
+text-align:center;
+font-size:35px;
+font-color:brown;
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+}
+</style>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="color">
+<div class="h1">
 <h1>Forum Name</h1><br>
+</div>
+<!-- Photo Grid -->
+<div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
+  <div class="w3-half">
+    <img src="getImages/forum.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="w3-half">
+    <img src="getImages/forums.jpg" style="width:100%">
+    
+  </div>
+  <div class="Forum">
+<div ng-controller="ForumController"><br>
+<h1>ForumName</h1><br>
+
 <input type="text" ng-model="forum.forumName"/>
 
 <br/><br/>
 
 <h1>Forum Content</h1><br>
-<textarea ng-model="forum.forumContent"></textarea>
+<textarea rows="10" cols="50" ng-model="forum.forumContent"></textarea>
 
 <br/><br/>
-
 <button ng-click="addForum()">Add Forum</button>
+<br>
 </div>
 </div>
+
+ 
+
+</div>
+  
+<!-- End Page Content -->
+</div>
+
+</div>
+</body>
+</html>
